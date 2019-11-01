@@ -14,5 +14,6 @@ namespace TicketManagementSystem.Models
 
         }
         public DbSet<TicketManagementSystem.Models.User> User { get; set; }
+        public DbSet<TicketManagementSystem.Models.FeedBack> FeedBack { get; set; }
     }
 }

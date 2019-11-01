@@ -8,6 +8,7 @@ namespace TicketManagementSystem.Models
 {
     public class Launch
     {
+        [Key]
         public int l_Id { get; set; }
 
         [Required]

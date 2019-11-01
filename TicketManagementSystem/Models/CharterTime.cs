@@ -8,6 +8,7 @@ namespace TicketManagementSystem.Models
 {
     public class CharterTime
     {
+        [Key]
         public int ct_Id { get; set; }
 
         [Required]

@@ -8,6 +8,7 @@ namespace TicketManagementSystem.Models
 {
     public class Owner
     {
+        [Key]
         public int o_Id { get; set; }
 
         [Required]

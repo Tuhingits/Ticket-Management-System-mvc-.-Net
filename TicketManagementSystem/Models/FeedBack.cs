@@ -8,6 +8,7 @@ namespace TicketManagementSystem.Models
 {
     public class FeedBack
     {
+        [Key]
         public int fb_Id { get; set; }
 
         [Required]

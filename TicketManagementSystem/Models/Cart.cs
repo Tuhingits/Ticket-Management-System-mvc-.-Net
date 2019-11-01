@@ -8,6 +8,7 @@ namespace TicketManagementSystem.Models
 {
     public class Cart
     {
+        [Key]
         public int c_Id { get; set; }
 
         [Required]

@@ -8,6 +8,7 @@ namespace TicketManagementSystem.Models
 {
     public class PromoUser
     {
+        [Key]
         public int pu_Id { get; set; }
 
         [Required]

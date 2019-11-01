@@ -9,6 +9,7 @@ namespace TicketManagementSystem.Models
     public class CavinDetails
 
     {
+        [Key]
         public int cv_Id { get; set; }
 
         [Required]

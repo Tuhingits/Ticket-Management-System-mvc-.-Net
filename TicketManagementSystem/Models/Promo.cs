@@ -8,6 +8,7 @@ namespace TicketManagementSystem.Models
 {
     public class Promo
     {
+        [Key]
         public int pr_Id { get; set; }
 
         [Required]

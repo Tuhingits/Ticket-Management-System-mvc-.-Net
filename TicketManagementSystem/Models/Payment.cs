@@ -8,6 +8,7 @@ namespace TicketManagementSystem.Models
 {
     public class Payment
     {
+        [Key]
         public int p_Id { get; set; }
 
         [Required]
