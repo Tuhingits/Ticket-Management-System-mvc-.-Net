@@ -66,3 +66,42 @@ D:\project\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1
 D:\project\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.dll
 D:\project\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.pdb
 D:\project\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.csproj.CopyComplete
+D:\git hub\TicketManagementSystem\TicketManagementSystem\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\git hub\TicketManagementSystem\TicketManagementSystem\bin\Debug\netcoreapp2.1\appsettings.json
+D:\git hub\TicketManagementSystem\TicketManagementSystem\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\git hub\TicketManagementSystem\TicketManagementSystem\bin\Debug\netcoreapp2.1\TicketManagementSystem.deps.json
+D:\git hub\TicketManagementSystem\TicketManagementSystem\bin\Debug\netcoreapp2.1\TicketManagementSystem.runtimeconfig.json
+D:\git hub\TicketManagementSystem\TicketManagementSystem\bin\Debug\netcoreapp2.1\TicketManagementSystem.runtimeconfig.dev.json
+D:\git hub\TicketManagementSystem\TicketManagementSystem\bin\Debug\netcoreapp2.1\TicketManagementSystem.dll
+D:\git hub\TicketManagementSystem\TicketManagementSystem\bin\Debug\netcoreapp2.1\TicketManagementSystem.pdb
+D:\git hub\TicketManagementSystem\TicketManagementSystem\bin\Debug\netcoreapp2.1\TicketManagementSystem.Views.dll
+D:\git hub\TicketManagementSystem\TicketManagementSystem\bin\Debug\netcoreapp2.1\TicketManagementSystem.Views.pdb
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.csprojAssemblyReference.cache
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.RazorAssemblyInfo.cache
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.RazorAssemblyInfo.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.AssemblyInfoInputs.cache
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.AssemblyInfo.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.TagHelpers.input.cache
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.TagHelpers.output.cache
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.RazorCoreGenerate.cache
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.RazorTargetAssemblyInfo.cache
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.RazorTargetAssemblyInfo.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.Views.pdb
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.dll
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.pdb
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.csproj.CopyComplete
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Create.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Delete.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Details.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Edit.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Index.cshtml.g.cs

@@ -8,6 +8,7 @@ namespace TicketManagementSystem.Models
 {
     public class Schedul
     {
+        [Key]
         public int s_Id { get; set; }
 
         [Required]

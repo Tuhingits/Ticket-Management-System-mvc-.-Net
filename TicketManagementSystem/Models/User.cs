@@ -8,6 +8,7 @@ namespace TicketManagementSystem.Models
 {
     public class User
     {
+        [Key]
         public int u_Id { get; set; }
 
         [Required]

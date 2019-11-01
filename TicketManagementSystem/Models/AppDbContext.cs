@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TicketManagementSystem.Models;
 
 namespace TicketManagementSystem.Models
 {
@@ -12,5 +13,6 @@ namespace TicketManagementSystem.Models
         {
 
         }
+        public DbSet<TicketManagementSystem.Models.User> User { get; set; }
     }
 }

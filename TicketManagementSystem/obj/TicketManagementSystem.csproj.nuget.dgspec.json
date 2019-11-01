@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\project\\TicketManagementSystem\\TicketManagementSystem\\TicketManagementSystem.csproj": {}
+    "D:\\git hub\\TicketManagementSystem\\TicketManagementSystem\\TicketManagementSystem.csproj": {}
   },
   "projects": {
-    "D:\\project\\TicketManagementSystem\\TicketManagementSystem\\TicketManagementSystem.csproj": {
+    "D:\\git hub\\TicketManagementSystem\\TicketManagementSystem\\TicketManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\project\\TicketManagementSystem\\TicketManagementSystem\\TicketManagementSystem.csproj",
+        "projectUniqueName": "D:\\git hub\\TicketManagementSystem\\TicketManagementSystem\\TicketManagementSystem.csproj",
         "projectName": "TicketManagementSystem",
-        "projectPath": "D:\\project\\TicketManagementSystem\\TicketManagementSystem\\TicketManagementSystem.csproj",
+        "projectPath": "D:\\git hub\\TicketManagementSystem\\TicketManagementSystem\\TicketManagementSystem.csproj",
         "packagesPath": "C:\\Users\\shuvo\\.nuget\\packages\\",
-        "outputPath": "D:\\project\\TicketManagementSystem\\TicketManagementSystem\\obj\\",
+        "outputPath": "D:\\git hub\\TicketManagementSystem\\TicketManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
             }
           },
           "imports": [
