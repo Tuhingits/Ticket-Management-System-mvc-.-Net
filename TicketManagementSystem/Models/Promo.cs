@@ -13,23 +13,23 @@ namespace TicketManagementSystem.Models
 
         [Required]
         [Display(Name = "Promo Code")]
-        public string promoCode { get; set; }
+        public string PromoCode { get; set; }
 
         [Required]
         [Display(Name = "Start Date")]
-        public DateTime startDate { get; set; }
+        public DateTime StartDate { get; set; }
 
         [Required]
         [Display(Name = "End Date")]
-        public DateTime endDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         [Required]
         [Display(Name = "Discount")]
         public string Discount { get; set; }
 
         [Required]
-        [Display(Name = "Max Amount")]
-        public Double maxAmount { get; set; }
+        [Display(Name = "Maxumam Amount")]
+        public Double MaxAmount { get; set; }
 
 
     }

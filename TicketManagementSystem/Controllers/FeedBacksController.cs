@@ -9,11 +9,11 @@ using TicketManagementSystem.Models;
 
 namespace TicketManagementSystem.Controllers
 {
-    public class FeedBacks : Controller
+    public class FeedBacksController : Controller
     {
         private readonly AppDbContext _context;
 
-        public FeedBacks(AppDbContext context)
+        public FeedBacksController(AppDbContext context)
         {
             _context = context;
         }
@@ -21,7 +21,7 @@ namespace TicketManagementSystem.Controllers
         // GET: FeedBacks
         public async Task<IActionResult> Index()
         {
-            return View(await _context.FeedBack.ToListAsync());
+            return View(await _context.FeedBacks.ToListAsync());
         }
 
         // GET: FeedBacks/Details/5
@@ -32,7 +32,7 @@ namespace TicketManagementSystem.Controllers
                 return NotFound();
             }
 
-            var feedBack = await _context.FeedBack
+            var feedBack = await _context.FeedBacks
                 .FirstOrDefaultAsync(m => m.fb_Id == id);
             if (feedBack == null)
             {
@@ -72,7 +72,7 @@ namespace TicketManagementSystem.Controllers
                 return NotFound();
             }
 
-            var feedBack = await _context.FeedBack.FindAsync(id);
+            var feedBack = await _context.FeedBacks.FindAsync(id);
             if (feedBack == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace TicketManagementSystem.Controllers
                 return NotFound();
             }
 
-            var feedBack = await _context.FeedBack
+            var feedBack = await _context.FeedBacks
                 .FirstOrDefaultAsync(m => m.fb_Id == id);
             if (feedBack == null)
             {
@@ -138,15 +138,15 @@ namespace TicketManagementSystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var feedBack = await _context.FeedBack.FindAsync(id);
-            _context.FeedBack.Remove(feedBack);
+            var feedBack = await _context.FeedBacks.FindAsync(id);
+            _context.FeedBacks.Remove(feedBack);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool FeedBackExists(int id)
         {
-            return _context.FeedBack.Any(e => e.fb_Id == id);
+            return _context.FeedBacks.Any(e => e.fb_Id == id);
         }
     }
 }

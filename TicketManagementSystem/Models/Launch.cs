@@ -18,5 +18,7 @@ namespace TicketManagementSystem.Models
         [Required]
         [Display(Name ="Rout")]
         public string Rout { get; set; }
+
+
     }
 }

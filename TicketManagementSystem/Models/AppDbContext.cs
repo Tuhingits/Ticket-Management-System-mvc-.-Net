@@ -13,7 +13,18 @@ namespace TicketManagementSystem.Models
         {
 
         }
-        public DbSet<TicketManagementSystem.Models.User> User { get; set; }
-        public DbSet<TicketManagementSystem.Models.FeedBack> FeedBack { get; set; }
+        public DbSet<TicketManagementSystem.Models.User> Users { get; set; }
+        public DbSet<TicketManagementSystem.Models.FeedBack> FeedBacks{ get; set; }
+        public DbSet<CartLine> CartLines { get; set; }
+        public DbSet<TicketManagementSystem.Models.Cart> Carts { get; set; }
+        public DbSet<TicketManagementSystem.Models.CavinDetails> CavinDetails { get; set; }
+        public DbSet<TicketManagementSystem.Models.PromoUser> PromoUsers { get; set; }
+        public DbSet<TicketManagementSystem.Models.Launch> Launches { get; set; }
+        public DbSet<TicketManagementSystem.Models.Owner> Owners { get; set; }
+        public DbSet<TicketManagementSystem.Models.Payment> Payments { get; set; }
+        public DbSet<TicketManagementSystem.Models.Promo> Promos { get; set; }
+        public DbSet<TicketManagementSystem.Models.Schedul> Scheduls { get; set; }
+        public DbSet<TicketManagementSystem.Models.PromoForLaunch> PromoForLaunches { get; set; }
+        public DbSet<TicketManagementSystem.Models.PromoForUser> PromoForUsers { get; set; }
     }
 }

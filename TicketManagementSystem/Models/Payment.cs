@@ -13,11 +13,11 @@ namespace TicketManagementSystem.Models
 
         [Required]
         [Display(Name = "Payment Status")]
-        public string  paymentStatus { get; set; }
+        public string  PaymentStatus { get; set; }
 
         [Required]
         [Display(Name = "Payment Option")]
-        public string paymentOption { get; set; }
+        public string PaymentOption { get; set; }
 
         public User User { get; set; }
         public Cart Cart { get; set; }

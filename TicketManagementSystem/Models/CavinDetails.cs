@@ -14,7 +14,7 @@ namespace TicketManagementSystem.Models
 
         [Required]
         [Display(Name = "Cavin Catagory")]
-        public string cavinCatagory { get; set; }
+        public string CavinCatagory { get; set; }
 
         [Required]
         [Display(Name = "Cavin Rent")]
@@ -26,7 +26,7 @@ namespace TicketManagementSystem.Models
 
         [Required]
         [Display(Name = "Cavin Number")]
-        public string cavinNumber { get; set; }
+        public string CavinNumber { get; set; }
 
         public Launch Launch { get; set; }
     }

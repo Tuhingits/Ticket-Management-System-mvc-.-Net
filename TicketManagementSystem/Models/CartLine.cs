@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicketManagementSystem.Models
 {
-    public class CharterTime
+    public class CartLine
     {
         [Key]
         public int ct_Id { get; set; }
@@ -20,7 +20,7 @@ namespace TicketManagementSystem.Models
         [Display(Name = "Catagory")]
         public string Catarory { get; set; }
 
-        public Cart Cart{ get; set; }
+        public Cart Cart { get; set; }
         public CavinDetails CavinDetails { get; set; }
     }
 }

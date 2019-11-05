@@ -16,7 +16,6 @@ namespace TicketManagementSystem.Models
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Username is required")]
-        [StringLength(16, ErrorMessage = "Must be 3 to 15 characters", MinimumLength = 3)]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Password is required")]

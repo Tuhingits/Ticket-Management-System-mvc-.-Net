@@ -21,5 +21,6 @@ namespace TicketManagementSystem.Models
 
         public User User { get; set; }
         public Promo Promo { get; set; }
+
     }
 }
