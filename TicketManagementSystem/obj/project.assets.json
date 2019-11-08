@@ -12629,11 +12629,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\git hub\\TicketManagementSystem\\TicketManagementSystem\\TicketManagementSystem.csproj",
+      "projectUniqueName": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
       "projectName": "TicketManagementSystem",
-      "projectPath": "D:\\git hub\\TicketManagementSystem\\TicketManagementSystem\\TicketManagementSystem.csproj",
+      "projectPath": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
       "packagesPath": "C:\\Users\\shuvo\\.nuget\\packages\\",
-      "outputPath": "D:\\git hub\\TicketManagementSystem\\TicketManagementSystem\\obj\\",
+      "outputPath": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
