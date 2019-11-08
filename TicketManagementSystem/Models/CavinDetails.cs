@@ -10,7 +10,7 @@ namespace TicketManagementSystem.Models
 
     {
         [Key]
-        public int cv_Id { get; set; }
+        public int Cv_Id { get; set; }
 
         [Required]
         [Display(Name = "Cavin Catagory")]
@@ -29,5 +29,7 @@ namespace TicketManagementSystem.Models
         public string CavinNumber { get; set; }
 
         public Launch Launch { get; set; }
+        public ICollection<Launch> Launches{ get; set; }
+
     }
 }

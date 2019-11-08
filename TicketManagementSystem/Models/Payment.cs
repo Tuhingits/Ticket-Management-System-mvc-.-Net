@@ -9,7 +9,7 @@ namespace TicketManagementSystem.Models
     public class Payment
     {
         [Key]
-        public int p_Id { get; set; }
+        public int P_Id { get; set; }
 
         [Required]
         [Display(Name = "Payment Status")]
@@ -21,5 +21,9 @@ namespace TicketManagementSystem.Models
 
         public User User { get; set; }
         public Cart Cart { get; set; }
+
+        public ICollection<Cart> Carts { get; set; }
+        public ICollection<User> Users { get; set; }
+
     }
 }

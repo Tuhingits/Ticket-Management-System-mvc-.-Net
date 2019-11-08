@@ -9,7 +9,7 @@ namespace TicketManagementSystem.Models
     public class Launch
     {
         [Key]
-        public int l_Id { get; set; }
+        public int L_Id { get; set; }
 
         [Required]
         [Display(Name = "Launch Name")]
@@ -18,7 +18,6 @@ namespace TicketManagementSystem.Models
         [Required]
         [Display(Name ="Rout")]
         public string Rout { get; set; }
-
 
     }
 }

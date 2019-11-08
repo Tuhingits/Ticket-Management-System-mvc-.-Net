@@ -9,9 +9,14 @@ namespace TicketManagementSystem.Models
     public class PromoForUser
     {
         [Key]
-        public int pfu_id { get; set; }
+        public int PFU_Id { get; set; }
 
         public Launch Launch { get; set; }
         public Promo Promo { get; set; }
+
+        public  ICollection<Launch>Launches { get; set; }
+        public  ICollection<Promo>Promos { get; set; }
+
+
     }
 }

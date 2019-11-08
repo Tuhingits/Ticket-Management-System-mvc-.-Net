@@ -33,7 +33,7 @@ namespace TicketManagementSystem.Controllers
             }
 
             var feedBack = await _context.FeedBacks
-                .FirstOrDefaultAsync(m => m.fb_Id == id);
+                .FirstOrDefaultAsync(m => m.FB_Id == id);
             if (feedBack == null)
             {
                 return NotFound();
@@ -53,7 +53,7 @@ namespace TicketManagementSystem.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("fb_Id,Details,Filter")] FeedBack feedBack)
+        public async Task<IActionResult> Create([Bind("FB_Id,Details,Filter")] FeedBack feedBack)
         {
             if (ModelState.IsValid)
             {
@@ -85,9 +85,9 @@ namespace TicketManagementSystem.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("fb_Id,Details,Filter")] FeedBack feedBack)
+        public async Task<IActionResult> Edit(int id, [Bind("FB_Id,Details,Filter")] FeedBack feedBack)
         {
-            if (id != feedBack.fb_Id)
+            if (id != feedBack.FB_Id)
             {
                 return NotFound();
             }
@@ -101,7 +101,7 @@ namespace TicketManagementSystem.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!FeedBackExists(feedBack.fb_Id))
+                    if (!FeedBackExists(feedBack.FB_Id))
                     {
                         return NotFound();
                     }
@@ -124,7 +124,7 @@ namespace TicketManagementSystem.Controllers
             }
 
             var feedBack = await _context.FeedBacks
-                .FirstOrDefaultAsync(m => m.fb_Id == id);
+                .FirstOrDefaultAsync(m => m.FB_Id == id);
             if (feedBack == null)
             {
                 return NotFound();
@@ -146,7 +146,7 @@ namespace TicketManagementSystem.Controllers
 
         private bool FeedBackExists(int id)
         {
-            return _context.FeedBacks.Any(e => e.fb_Id == id);
+            return _context.FeedBacks.Any(e => e.FB_Id == id);
         }
     }
 }

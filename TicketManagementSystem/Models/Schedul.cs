@@ -9,7 +9,7 @@ namespace TicketManagementSystem.Models
     public class Schedul
     {
         [Key]
-        public int s_Id { get; set; }
+        public int S_Id { get; set; }
 
         [Required]
         [Display(Name = "Date")]
@@ -28,5 +28,7 @@ namespace TicketManagementSystem.Models
         public string To { get; set; }
 
         public Launch Launch { get; set; }
+        public ICollection<Launch> Launches { get; set; }
+
     }
 }

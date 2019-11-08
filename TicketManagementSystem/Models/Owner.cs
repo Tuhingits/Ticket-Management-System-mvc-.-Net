@@ -9,11 +9,11 @@ namespace TicketManagementSystem.Models
     public class Owner
     {
         [Key]
-        public int o_Id { get; set; }
+        public int O_Id { get; set; }
 
         [Required]
         [Display(Name = "Owner Name")]
-        public string ownerName { get; set; }
+        public string OwnerName { get; set; }
 
         [Required]
         [Display(Name = "Owner Email")]
@@ -24,5 +24,8 @@ namespace TicketManagementSystem.Models
         public string Phone { get; set; }
 
         public Launch Launch { get; set; }
+        public ICollection<Launch> Launches { get; set; }
+
+
     }
 }

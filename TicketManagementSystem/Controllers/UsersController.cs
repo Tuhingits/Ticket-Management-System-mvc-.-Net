@@ -21,7 +21,7 @@ namespace TicketManagementSystem.Controllers
         // GET: Users
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Users.ToListAsync());
+            return View(await _context.User.ToListAsync());
         }
 
         // GET: Users/Details/5
@@ -32,8 +32,8 @@ namespace TicketManagementSystem.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users
-                .FirstOrDefaultAsync(m => m.u_Id == id);
+            var user = await _context.User
+                .FirstOrDefaultAsync(m => m.U_Id == id);
             if (user == null)
             {
                 return NotFound();
@@ -53,7 +53,7 @@ namespace TicketManagementSystem.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("u_Id,Name,Email,Password,Phone,Gender")] User user)
+        public async Task<IActionResult> Create([Bind("U_Id,Name,Email,Password,Phone,Gender")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -72,7 +72,7 @@ namespace TicketManagementSystem.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users.FindAsync(id);
+            var user = await _context.User.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
@@ -85,9 +85,9 @@ namespace TicketManagementSystem.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("u_Id,Name,Email,Password,Phone,Gender")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("U_Id,Name,Email,Password,Phone,Gender")] User user)
         {
-            if (id != user.u_Id)
+            if (id != user.U_Id)
             {
                 return NotFound();
             }
@@ -101,7 +101,7 @@ namespace TicketManagementSystem.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UserExists(user.u_Id))
+                    if (!UserExists(user.U_Id))
                     {
                         return NotFound();
                     }
@@ -123,8 +123,8 @@ namespace TicketManagementSystem.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users
-                .FirstOrDefaultAsync(m => m.u_Id == id);
+            var user = await _context.User
+                .FirstOrDefaultAsync(m => m.U_Id == id);
             if (user == null)
             {
                 return NotFound();
@@ -138,15 +138,15 @@ namespace TicketManagementSystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var user = await _context.Users.FindAsync(id);
-            _context.Users.Remove(user);
+            var user = await _context.User.FindAsync(id);
+            _context.User.Remove(user);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UserExists(int id)
         {
-            return _context.Users.Any(e => e.u_Id == id);
+            return _context.User.Any(e => e.U_Id == id);
         }
     }
 }

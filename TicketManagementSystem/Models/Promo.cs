@@ -9,7 +9,7 @@ namespace TicketManagementSystem.Models
     public class Promo
     {
         [Key]
-        public int pr_Id { get; set; }
+        public int Pr_Id { get; set; }
 
         [Required]
         [Display(Name = "Promo Code")]
@@ -31,6 +31,7 @@ namespace TicketManagementSystem.Models
         [Display(Name = "Maxumam Amount")]
         public Double MaxAmount { get; set; }
 
+        public ICollection<Promo> Promos { get; set; }
 
     }
 }

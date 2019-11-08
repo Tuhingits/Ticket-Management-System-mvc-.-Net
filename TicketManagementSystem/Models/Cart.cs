@@ -9,7 +9,7 @@ namespace TicketManagementSystem.Models
     public class Cart
     {
         [Key]
-        public int c_Id { get; set; }
+        public int C_Id { get; set; }
 
         [Required]
         [Display(Name = "Date")]
@@ -17,10 +17,15 @@ namespace TicketManagementSystem.Models
 
         [Required]
         [Display(Name = "Total Amount ")]
-        public string totalTk { get; set; }
+        public string TotalTk { get; set; }
 
         public User User { get; set; }
         public Promo Promo { get; set; }
+        public Launch Launch { get; set; }
+
+        public  ICollection<User> Users { get; set; }
+        public  ICollection<Launch> Launches { get; set; }
+        public  ICollection<Promo> Promos { get; set; }
 
     }
 }

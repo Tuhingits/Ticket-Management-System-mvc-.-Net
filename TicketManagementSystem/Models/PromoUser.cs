@@ -9,7 +9,7 @@ namespace TicketManagementSystem.Models
     public class PromoUser
     {
         [Key]
-        public int pu_Id { get; set; }
+        public int PU_Id { get; set; }
 
         [Required]
         [Display(Name = "Date")]
@@ -21,5 +21,9 @@ namespace TicketManagementSystem.Models
 
        public User User { get; set; }
         public Promo Promo { get; set; }
+
+        public ICollection<User>Users { get; set; }
+        public ICollection<Promo>Promos { get; set; }
+
     }
 }

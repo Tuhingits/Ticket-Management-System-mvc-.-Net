@@ -105,6 +105,11 @@ D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1
 D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Details.cshtml.g.cs
 D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Edit.cshtml.g.cs
 D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Index.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Payments\Create.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Payments\Delete.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Payments\Details.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Payments\Edit.cshtml.g.cs
+D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Payments\Index.cshtml.g.cs
 D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\FeedBacks\Create.cshtml.g.cs
 D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\FeedBacks\Delete.cshtml.g.cs
 D:\git hub\TicketManagementSystem\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\FeedBacks\Details.cshtml.g.cs
