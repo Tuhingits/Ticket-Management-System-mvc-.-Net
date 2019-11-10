@@ -9,7 +9,6 @@ using TicketManagementSystem.Models;
 
 namespace TicketManagementSystem.Controllers
 {
-
     public class PaymentsController : Controller
     {
         private readonly AppDbContext _context;

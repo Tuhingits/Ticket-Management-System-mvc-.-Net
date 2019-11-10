@@ -9,7 +9,7 @@ namespace TicketManagementSystem.Models
     public class FeedBack
     {
         [Key]
-        public int FB_Id { get; set; }
+        public int Fb_Id { get; set; }
 
         [Required]
         [Display(Name = "Details")]
@@ -23,5 +23,6 @@ namespace TicketManagementSystem.Models
         public User User { get; set; }
         public ICollection<Cart> Carts { get; set; }
         public ICollection<User>Users { get; set; }
+
     }
 }

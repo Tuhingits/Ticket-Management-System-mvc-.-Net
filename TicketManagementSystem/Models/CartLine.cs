@@ -9,12 +9,11 @@ namespace TicketManagementSystem.Models
     public class CartLine
     {
         [Key]
-        public int CL_Id { get; set; }
+        public int Cl_Id { get; set; }
 
         [Required]
         [Display(Name = "Price")]
         public string Price { get; set; }
-
 
         [Required]
         [Display(Name = "Catagory")]
@@ -25,6 +24,6 @@ namespace TicketManagementSystem.Models
 
         public  ICollection<Cart> Carts { get; set; }
         public ICollection<CavinDetails> Cavins { get; set; }
-
+    
     }
 }

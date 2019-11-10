@@ -25,6 +25,6 @@ namespace TicketManagementSystem.Models
         public DbSet<TicketManagementSystem.Models.Schedul> Scheduls { get; set; }
         public DbSet<TicketManagementSystem.Models.PromoForLaunch> PromoForLaunches { get; set; }
         public DbSet<TicketManagementSystem.Models.PromoForUser> PromoForUsers { get; set; }
-        public DbSet<TicketManagementSystem.Models.User> User { get; set; }
+        public DbSet<TicketManagementSystem.Models.User> Users { get; set; }
     }
 }
