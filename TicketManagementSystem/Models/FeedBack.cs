@@ -21,8 +21,8 @@ namespace TicketManagementSystem.Models
 
         public Cart Cart { get; set; }
         public User User { get; set; }
+
         public ICollection<Cart> Carts { get; set; }
         public ICollection<User>Users { get; set; }
-
     }
 }
