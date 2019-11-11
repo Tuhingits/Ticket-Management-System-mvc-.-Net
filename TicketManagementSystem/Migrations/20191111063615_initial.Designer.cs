@@ -10,8 +10,8 @@ using TicketManagementSystem.Models;
 namespace TicketManagementSystem.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20191108074722_User")]
-    partial class User
+    [Migration("20191111063615_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,10 +27,12 @@ namespace TicketManagementSystem.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CartLineCL_Id");
+                    b.Property<int?>("CartLineCl_Id");
 
                     b.Property<string>("Date")
                         .IsRequired();
+
+                    b.Property<int?>("FeedBackFb_Id");
 
                     b.Property<int?>("LaunchL_Id");
 
@@ -45,7 +47,9 @@ namespace TicketManagementSystem.Migrations
 
                     b.HasKey("C_Id");
 
-                    b.HasIndex("CartLineCL_Id");
+                    b.HasIndex("CartLineCl_Id");
+
+                    b.HasIndex("FeedBackFb_Id");
 
                     b.HasIndex("LaunchL_Id");
 
@@ -60,7 +64,7 @@ namespace TicketManagementSystem.Migrations
 
             modelBuilder.Entity("TicketManagementSystem.Models.CartLine", b =>
                 {
-                    b.Property<int>("CL_Id")
+                    b.Property<int>("Cl_Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -74,7 +78,7 @@ namespace TicketManagementSystem.Migrations
                     b.Property<string>("Price")
                         .IsRequired();
 
-                    b.HasKey("CL_Id");
+                    b.HasKey("Cl_Id");
 
                     b.HasIndex("CartC_Id");
 
@@ -89,7 +93,7 @@ namespace TicketManagementSystem.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CartLineCL_Id");
+                    b.Property<int?>("CartLineCl_Id");
 
                     b.Property<string>("CavinCatagory")
                         .IsRequired();
@@ -106,7 +110,7 @@ namespace TicketManagementSystem.Migrations
 
                     b.HasKey("Cv_Id");
 
-                    b.HasIndex("CartLineCL_Id");
+                    b.HasIndex("CartLineCl_Id");
 
                     b.HasIndex("LaunchL_Id");
 
@@ -115,7 +119,7 @@ namespace TicketManagementSystem.Migrations
 
             modelBuilder.Entity("TicketManagementSystem.Models.FeedBack", b =>
                 {
-                    b.Property<int>("FB_Id")
+                    b.Property<int>("Fb_Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -129,7 +133,7 @@ namespace TicketManagementSystem.Migrations
 
                     b.Property<int?>("UserU_Id");
 
-                    b.HasKey("FB_Id");
+                    b.HasKey("Fb_Id");
 
                     b.HasIndex("CartC_Id");
 
@@ -368,6 +372,8 @@ namespace TicketManagementSystem.Migrations
                     b.Property<string>("Email")
                         .IsRequired();
 
+                    b.Property<int?>("FeedBackFb_Id");
+
                     b.Property<string>("Gender")
                         .IsRequired();
 
@@ -391,20 +397,26 @@ namespace TicketManagementSystem.Migrations
 
                     b.HasIndex("CartC_Id");
 
+                    b.HasIndex("FeedBackFb_Id");
+
                     b.HasIndex("PaymentP_Id");
 
                     b.HasIndex("PromoForLaunchPFL_Id");
 
                     b.HasIndex("PromoUserPU_Id");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("TicketManagementSystem.Models.Cart", b =>
                 {
                     b.HasOne("TicketManagementSystem.Models.CartLine")
                         .WithMany("Carts")
-                        .HasForeignKey("CartLineCL_Id");
+                        .HasForeignKey("CartLineCl_Id");
+
+                    b.HasOne("TicketManagementSystem.Models.FeedBack")
+                        .WithMany("Carts")
+                        .HasForeignKey("FeedBackFb_Id");
 
                     b.HasOne("TicketManagementSystem.Models.Launch", "Launch")
                         .WithMany()
@@ -438,7 +450,7 @@ namespace TicketManagementSystem.Migrations
                 {
                     b.HasOne("TicketManagementSystem.Models.CartLine")
                         .WithMany("Cavins")
-                        .HasForeignKey("CartLineCL_Id");
+                        .HasForeignKey("CartLineCl_Id");
 
                     b.HasOne("TicketManagementSystem.Models.Launch", "Launch")
                         .WithMany()
@@ -565,6 +577,10 @@ namespace TicketManagementSystem.Migrations
                     b.HasOne("TicketManagementSystem.Models.Cart")
                         .WithMany("Users")
                         .HasForeignKey("CartC_Id");
+
+                    b.HasOne("TicketManagementSystem.Models.FeedBack")
+                        .WithMany("Users")
+                        .HasForeignKey("FeedBackFb_Id");
 
                     b.HasOne("TicketManagementSystem.Models.Payment")
                         .WithMany("Users")

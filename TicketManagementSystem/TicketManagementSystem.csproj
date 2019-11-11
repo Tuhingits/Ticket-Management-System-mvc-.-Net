@@ -6,8 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20191104080557_Payment.cs" />
+    <Compile Remove="Migrations\20191104080557_Payment.Designer.cs" />
+    <Compile Remove="Migrations\20191105065847_CartLine.cs" />
+    <Compile Remove="Migrations\20191105065847_CartLine.Designer.cs" />
+    <Compile Remove="Migrations\20191108074722_User.cs" />
+    <Compile Remove="Migrations\20191108074722_User.Designer.cs" />
     <Compile Remove="Migrations\20191110091320_Launch.cs" />
     <Compile Remove="Migrations\20191110091320_Launch.Designer.cs" />
+    <Compile Remove="Migrations\20191110091659_Launch.cs" />
+    <Compile Remove="Migrations\20191110091659_Launch.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,6 +23,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>
