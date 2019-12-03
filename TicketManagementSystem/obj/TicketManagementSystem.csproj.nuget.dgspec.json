@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\dot net project\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj": {}
+    "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj": {}
   },
   "projects": {
-    "F:\\dot net project\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj": {
+    "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dot net project\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
+        "projectUniqueName": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
         "projectName": "TicketManagementSystem",
-        "projectPath": "F:\\dot net project\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\Mukdo\\.nuget\\packages\\",
-        "outputPath": "F:\\dot net project\\LaunchTicketManagement\\TicketManagementSystem\\obj\\",
+        "projectPath": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\shuvo\\.nuget\\packages\\",
+        "outputPath": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mukdo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\shuvo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -68,10 +69,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

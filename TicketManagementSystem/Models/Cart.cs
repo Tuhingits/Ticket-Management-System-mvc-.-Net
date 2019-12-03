@@ -19,11 +19,11 @@ namespace TicketManagementSystem.Models
         [Display(Name = "Total Amount ")]
         public string TotalTk { get; set; }
 
-        public User User { get; set; }
+        public Registation Registation { get; set; }
         public Promo Promo { get; set; }
         public Launch Launch { get; set; }
 
-        public  ICollection<User> Users { get; set; }
+        public  ICollection<Registation>  Registations { get; set; }
         public  ICollection<Launch> Launches { get; set; }
         public  ICollection<Promo> Promos { get; set; }
 

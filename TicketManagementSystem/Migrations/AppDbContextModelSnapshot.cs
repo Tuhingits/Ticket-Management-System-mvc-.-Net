@@ -38,10 +38,10 @@ namespace TicketManagementSystem.Migrations
 
                     b.Property<int?>("PromoPr_Id");
 
+                    b.Property<int?>("RegistationU_Id");
+
                     b.Property<string>("TotalTk")
                         .IsRequired();
-
-                    b.Property<int?>("UserU_Id");
 
                     b.HasKey("C_Id");
 
@@ -55,7 +55,7 @@ namespace TicketManagementSystem.Migrations
 
                     b.HasIndex("PromoPr_Id");
 
-                    b.HasIndex("UserU_Id");
+                    b.HasIndex("RegistationU_Id");
 
                     b.ToTable("Carts");
                 });
@@ -129,13 +129,13 @@ namespace TicketManagementSystem.Migrations
                     b.Property<string>("Filter")
                         .IsRequired();
 
-                    b.Property<int?>("UserU_Id");
+                    b.Property<int?>("RegistationU_Id");
 
                     b.HasKey("Fb_Id");
 
                     b.HasIndex("CartC_Id");
 
-                    b.HasIndex("UserU_Id");
+                    b.HasIndex("RegistationU_Id");
 
                     b.ToTable("FeedBacks");
                 });
@@ -215,13 +215,13 @@ namespace TicketManagementSystem.Migrations
                     b.Property<string>("PaymentStatus")
                         .IsRequired();
 
-                    b.Property<int?>("UserU_Id");
+                    b.Property<int?>("RegistationU_Id");
 
                     b.HasKey("P_Id");
 
                     b.HasIndex("CartC_Id");
 
-                    b.HasIndex("UserU_Id");
+                    b.HasIndex("RegistationU_Id");
 
                     b.ToTable("Payments");
                 });
@@ -277,13 +277,13 @@ namespace TicketManagementSystem.Migrations
 
                     b.Property<int?>("PromoPr_Id");
 
-                    b.Property<int?>("UserU_Id");
+                    b.Property<int?>("RegistationU_Id");
 
                     b.HasKey("PFL_Id");
 
                     b.HasIndex("PromoPr_Id");
 
-                    b.HasIndex("UserU_Id");
+                    b.HasIndex("RegistationU_Id");
 
                     b.ToTable("PromoForLaunches");
                 });
@@ -318,54 +318,29 @@ namespace TicketManagementSystem.Migrations
 
                     b.Property<int?>("PromoPr_Id");
 
+                    b.Property<int?>("RegistationU_Id");
+
                     b.Property<string>("Time")
                         .IsRequired();
-
-                    b.Property<int?>("UserU_Id");
 
                     b.HasKey("PU_Id");
 
                     b.HasIndex("PromoPr_Id");
 
-                    b.HasIndex("UserU_Id");
+                    b.HasIndex("RegistationU_Id");
 
                     b.ToTable("PromoUsers");
                 });
 
-            modelBuilder.Entity("TicketManagementSystem.Models.Schedul", b =>
-                {
-                    b.Property<int>("S_Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Date")
-                        .IsRequired();
-
-                    b.Property<string>("From")
-                        .IsRequired();
-
-                    b.Property<int?>("LaunchL_Id");
-
-                    b.Property<string>("Time")
-                        .IsRequired();
-
-                    b.Property<string>("To")
-                        .IsRequired();
-
-                    b.HasKey("S_Id");
-
-                    b.HasIndex("LaunchL_Id");
-
-                    b.ToTable("Scheduls");
-                });
-
-            modelBuilder.Entity("TicketManagementSystem.Models.User", b =>
+            modelBuilder.Entity("TicketManagementSystem.Models.Registation", b =>
                 {
                     b.Property<int>("U_Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int?>("CartC_Id");
+
+                    b.Property<string>("ConfirmPassword");
 
                     b.Property<string>("Email")
                         .IsRequired();
@@ -403,7 +378,34 @@ namespace TicketManagementSystem.Migrations
 
                     b.HasIndex("PromoUserPU_Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Registations");
+                });
+
+            modelBuilder.Entity("TicketManagementSystem.Models.Schedul", b =>
+                {
+                    b.Property<int>("S_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Date")
+                        .IsRequired();
+
+                    b.Property<string>("From")
+                        .IsRequired();
+
+                    b.Property<int?>("LaunchL_Id");
+
+                    b.Property<string>("Time")
+                        .IsRequired();
+
+                    b.Property<string>("To")
+                        .IsRequired();
+
+                    b.HasKey("S_Id");
+
+                    b.HasIndex("LaunchL_Id");
+
+                    b.ToTable("Scheduls");
                 });
 
             modelBuilder.Entity("TicketManagementSystem.Models.Cart", b =>
@@ -428,9 +430,9 @@ namespace TicketManagementSystem.Migrations
                         .WithMany()
                         .HasForeignKey("PromoPr_Id");
 
-                    b.HasOne("TicketManagementSystem.Models.User", "User")
+                    b.HasOne("TicketManagementSystem.Models.Registation", "Registation")
                         .WithMany()
-                        .HasForeignKey("UserU_Id");
+                        .HasForeignKey("RegistationU_Id");
                 });
 
             modelBuilder.Entity("TicketManagementSystem.Models.CartLine", b =>
@@ -461,9 +463,9 @@ namespace TicketManagementSystem.Migrations
                         .WithMany()
                         .HasForeignKey("CartC_Id");
 
-                    b.HasOne("TicketManagementSystem.Models.User", "User")
+                    b.HasOne("TicketManagementSystem.Models.Registation", "Registation")
                         .WithMany()
-                        .HasForeignKey("UserU_Id");
+                        .HasForeignKey("RegistationU_Id");
                 });
 
             modelBuilder.Entity("TicketManagementSystem.Models.Launch", b =>
@@ -502,9 +504,9 @@ namespace TicketManagementSystem.Migrations
                         .WithMany()
                         .HasForeignKey("CartC_Id");
 
-                    b.HasOne("TicketManagementSystem.Models.User", "User")
+                    b.HasOne("TicketManagementSystem.Models.Registation", "Registation")
                         .WithMany()
-                        .HasForeignKey("UserU_Id");
+                        .HasForeignKey("RegistationU_Id");
                 });
 
             modelBuilder.Entity("TicketManagementSystem.Models.Promo", b =>
@@ -536,9 +538,9 @@ namespace TicketManagementSystem.Migrations
                         .WithMany()
                         .HasForeignKey("PromoPr_Id");
 
-                    b.HasOne("TicketManagementSystem.Models.User", "User")
+                    b.HasOne("TicketManagementSystem.Models.Registation", "Registation")
                         .WithMany()
-                        .HasForeignKey("UserU_Id");
+                        .HasForeignKey("RegistationU_Id");
                 });
 
             modelBuilder.Entity("TicketManagementSystem.Models.PromoForUser", b =>
@@ -558,9 +560,32 @@ namespace TicketManagementSystem.Migrations
                         .WithMany()
                         .HasForeignKey("PromoPr_Id");
 
-                    b.HasOne("TicketManagementSystem.Models.User", "User")
+                    b.HasOne("TicketManagementSystem.Models.Registation", "Registation")
                         .WithMany()
-                        .HasForeignKey("UserU_Id");
+                        .HasForeignKey("RegistationU_Id");
+                });
+
+            modelBuilder.Entity("TicketManagementSystem.Models.Registation", b =>
+                {
+                    b.HasOne("TicketManagementSystem.Models.Cart")
+                        .WithMany("Registations")
+                        .HasForeignKey("CartC_Id");
+
+                    b.HasOne("TicketManagementSystem.Models.FeedBack")
+                        .WithMany("Registations")
+                        .HasForeignKey("FeedBackFb_Id");
+
+                    b.HasOne("TicketManagementSystem.Models.Payment")
+                        .WithMany("Registations")
+                        .HasForeignKey("PaymentP_Id");
+
+                    b.HasOne("TicketManagementSystem.Models.PromoForLaunch")
+                        .WithMany("Registations")
+                        .HasForeignKey("PromoForLaunchPFL_Id");
+
+                    b.HasOne("TicketManagementSystem.Models.PromoUser")
+                        .WithMany("Registations")
+                        .HasForeignKey("PromoUserPU_Id");
                 });
 
             modelBuilder.Entity("TicketManagementSystem.Models.Schedul", b =>
@@ -568,29 +593,6 @@ namespace TicketManagementSystem.Migrations
                     b.HasOne("TicketManagementSystem.Models.Launch", "Launch")
                         .WithMany()
                         .HasForeignKey("LaunchL_Id");
-                });
-
-            modelBuilder.Entity("TicketManagementSystem.Models.User", b =>
-                {
-                    b.HasOne("TicketManagementSystem.Models.Cart")
-                        .WithMany("Users")
-                        .HasForeignKey("CartC_Id");
-
-                    b.HasOne("TicketManagementSystem.Models.FeedBack")
-                        .WithMany("Users")
-                        .HasForeignKey("FeedBackFb_Id");
-
-                    b.HasOne("TicketManagementSystem.Models.Payment")
-                        .WithMany("Users")
-                        .HasForeignKey("PaymentP_Id");
-
-                    b.HasOne("TicketManagementSystem.Models.PromoForLaunch")
-                        .WithMany("Users")
-                        .HasForeignKey("PromoForLaunchPFL_Id");
-
-                    b.HasOne("TicketManagementSystem.Models.PromoUser")
-                        .WithMany("Users")
-                        .HasForeignKey("PromoUserPU_Id");
                 });
 #pragma warning restore 612, 618
         }

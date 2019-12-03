@@ -20,9 +20,9 @@ namespace TicketManagementSystem.Models
         public string Filter { get; set; }
 
         public Cart Cart { get; set; }
-        public User User { get; set; }
+        public Registation Registation { get; set; }
 
         public ICollection<Cart> Carts { get; set; }
-        public ICollection<User>Users { get; set; }
+        public ICollection<Registation> Registations { get; set; }
     }
 }

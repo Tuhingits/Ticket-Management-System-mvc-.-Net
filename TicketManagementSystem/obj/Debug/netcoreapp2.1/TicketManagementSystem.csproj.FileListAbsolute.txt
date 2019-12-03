@@ -149,11 +149,6 @@ D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.dll
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.pdb
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.csproj.CopyComplete
-D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Create.cshtml.g.cs
-D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Delete.cshtml.g.cs
-D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Details.cshtml.g.cs
-D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Edit.cshtml.g.cs
-D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Users\Index.cshtml.g.cs
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\FeedBacks\Create.cshtml.g.cs
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\FeedBacks\Delete.cshtml.g.cs
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\FeedBacks\Details.cshtml.g.cs
@@ -265,3 +260,13 @@ F:\dot net project\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netco
 F:\dot net project\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Launches\Details.g.cshtml.cs
 F:\dot net project\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Launches\Edit.g.cshtml.cs
 F:\dot net project\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Launches\Index.g.cshtml.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Launches\Create.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Launches\Delete.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Launches\Details.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Launches\Edit.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Launches\Index.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Registations\Create.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Registations\Delete.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Registations\Details.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Registations\Edit.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Registations\Index.cshtml.g.cs

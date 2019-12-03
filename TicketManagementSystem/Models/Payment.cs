@@ -19,11 +19,11 @@ namespace TicketManagementSystem.Models
         [Display(Name = "Payment Option")]
         public string PaymentOption { get; set; }
 
-        public User User { get; set; }
+        public Registation Registation { get; set; }
         public Cart Cart { get; set; }
 
         public ICollection<Cart> Carts { get; set; }
-        public ICollection<User> Users { get; set; }
+        public ICollection<Registation> Registations { get; set; }
 
     }
 }
