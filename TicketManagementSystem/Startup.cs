@@ -34,7 +34,7 @@ namespace TicketManagementSystem
             });
 
             services.AddDbContextPool<AppDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("Connection")));
-           
+            services.AddSession();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -50,7 +50,7 @@ namespace TicketManagementSystem
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

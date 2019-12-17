@@ -1,0 +1,25 @@
+﻿body {
+}
+.table{
+    background-color:springgreen;
+    border:solid 5px;
+}
+h2{
+    background-color:darkgoldenrod;
+    text-align:center;
+    font:bold;
+}
+tr:hover{
+    background-color:white;
+}
+.row{
+    text-align:center;
+    border:solid 5px;
+    background-color:rgb(0,0,0,0.5);
+}
+
+.rowEdit{
+    text-align: center;
+    border: solid 5px;
+    background-color: red;
+}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +22,14 @@ namespace TicketManagementSystem.Controllers
         // GET: Launches
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Launches.ToListAsync());
+            if (HttpContext.Session.GetString("U_Id") != null)
+            {
+                return View(await _context.Launches.ToListAsync());
+            }
+            else
+            {
+                return RedirectToAction("Login", "LogIn");
+            }
         }
 
         // GET: Launches/Details/5

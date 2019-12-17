@@ -15,7 +15,8 @@ namespace TicketManagementSystem.Models
         [Display(Name = "User Name")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Username is required")]
+        [Required(ErrorMessage = "User Email is required")]
+        [EmailAddress]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
@@ -27,11 +28,15 @@ namespace TicketManagementSystem.Models
         public string ConfirmPassword { get; set; }
 
         [Required]
+        [Phone]
         [Display(Name = "Phone Number")]
         public string Phone { get; set; }
 
         [Required]
         [Display(Name = "Gender")]
         public string Gender { get; set; }
+
+        public ICollection<PromoForLaunch> PromoForLaunche { get; set; }
+
     }
 }

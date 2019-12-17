@@ -12623,25 +12623,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shuvo\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\DCL\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
+      "projectUniqueName": "E:\\Project\\oosd pROJECT\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
       "projectName": "TicketManagementSystem",
-      "projectPath": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\shuvo\\.nuget\\packages\\",
-      "outputPath": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\obj\\",
+      "projectPath": "E:\\Project\\oosd pROJECT\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\DCL\\.nuget\\packages\\",
+      "outputPath": "E:\\Project\\oosd pROJECT\\LaunchTicketManagement\\TicketManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\shuvo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\DCL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

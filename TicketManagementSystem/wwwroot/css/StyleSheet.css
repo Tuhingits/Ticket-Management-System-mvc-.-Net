@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.color-red:hover{
+    background-color:red;
+}
+/* its for slide show height weight */
+.SizeForSlideShow{
+   height:300px;
+   
+}
